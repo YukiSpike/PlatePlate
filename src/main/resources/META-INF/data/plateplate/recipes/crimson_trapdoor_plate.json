@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "wooden_plate",
+  "ingredients": [
+    {
+      "item": "minecraft:crimson_trapdoor"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "plateplate:crimson_trapdoor_plate"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "values": [
+    "plateplate:hanging_oak_plate",
+    "plateplate:hanging_oak_trapdoor_plate",
+    "plateplate:hanging_spruce_plate",
+    "plateplate:hanging_spruce_trapdoor_plate",
+    "plateplate:hanging_birch_plate",
+    "plateplate:hanging_birch_trapdoor_plate",
+    "plateplate:hanging_jungle_plate",
+    "plateplate:hanging_jungle_trapdoor_plate",
+    "plateplate:hanging_acacia_plate",
+    "plateplate:hanging_acacia_trapdoor_plate",
+    "plateplate:hanging_dark_oak_plate",
+    "plateplate:hanging_dark_oak_trapdoor_plate",
+    "plateplate:hanging_mangrove_plate",
+    "plateplate:hanging_mangrove_trapdoor_plate",
+    "plateplate:hanging_cherry_plate",
+    "plateplate:hanging_cherry_trapdoor_plate",
+    "plateplate:hanging_bamboo_plate",
+    "plateplate:hanging_bamboo_trapdoor_plate",
+    "plateplate:hanging_crimson_plate",
+    "plateplate:hanging_crimson_trapdoor_plate",
+    "plateplate:hanging_warped_plate",
+    "plateplate:hanging_warped_trapdoor_plate"
+  ]
+}
