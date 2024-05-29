@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "wooden_hanging_plate",
+  "ingredients": [
+    {
+      "item": "plateplate:jungle_trapdoor_plate"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "plateplate:hanging_jungle_trapdoor_plate"
+  }
+}

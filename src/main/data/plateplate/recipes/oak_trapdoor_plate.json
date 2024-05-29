@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "wooden_plate",
+  "ingredients": [
+    {
+      "item": "minecraft:oak_trapdoor"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "plateplate:oak_trapdoor_plate"
+  }
+}
