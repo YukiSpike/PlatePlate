@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "plateplate:block/hanging_glass_plate",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "plateplate:block/hanging_glass_plate"
+    },
+    "facing=south": {
+      "model": "plateplate:block/hanging_glass_plate",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "plateplate:block/hanging_glass_plate",
+      "y": 270
+    }
+  }
+}

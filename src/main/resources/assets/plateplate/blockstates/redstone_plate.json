@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "half=bottom": {
+      "model": "plateplate:block/redstone_plate_bottom"
+    },
+    "half=top": {
+      "model": "plateplate:block/redstone_plate_top"
+    }
+  }
+}

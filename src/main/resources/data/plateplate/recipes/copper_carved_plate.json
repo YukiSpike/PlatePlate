@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "wooden_plate",
+  "ingredients": [
+    {
+      "item": "minecraft:copper_trapdoor"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "plateplate:copper_carved_plate"
+  }
+}

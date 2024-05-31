@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "wooden_hanging_plate",
+  "ingredients": [
+    {
+      "item": "plateplate:warped_plate"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "plateplate:hanging_warped_plate"
+  }
+}

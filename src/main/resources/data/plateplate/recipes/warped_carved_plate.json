@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "wooden_plate",
+  "ingredients": [
+    {
+      "item": "minecraft:warped_trapdoor"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "plateplate:warped_carved_plate"
+  }
+}

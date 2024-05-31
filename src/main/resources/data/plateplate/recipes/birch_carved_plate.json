@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "wooden_plate",
+  "ingredients": [
+    {
+      "item": "minecraft:birch_trapdoor"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "plateplate:birch_carved_plate"
+  }
+}

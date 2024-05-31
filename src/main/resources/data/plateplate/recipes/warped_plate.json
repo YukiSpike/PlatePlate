@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "wooden_plate",
+  "key": {
+    "#": {
+      "item": "minecraft:warped_slab"
+    }
+  },
+  "pattern": [
+    "###"
+  ],
+  "result": {
+    "count": 6,
+    "id": "plateplate:warped_plate"
+  }
+}

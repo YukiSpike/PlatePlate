@@ -5,13 +5,18 @@ import com.Yuki_Spike.plateplate.block.*;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.PoweredBlock;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
 import net.minecraft.world.level.material.MapColor;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import java.util.function.Supplier;
+import java.util.function.ToIntFunction;
 
 public class ModBlock {
     public static final DeferredRegister.Blocks BLOCKS = DeferredRegister.createBlocks(PlatePlate.MODID);
@@ -24,7 +29,7 @@ public class ModBlock {
                     .sound(SoundType.WOOD)
                     .ignitedByLava()
                     .noOcclusion()));
-    public static final Supplier<Block> OAK_TRAPDOOR_PLATE = registerBlock("oak_trapdoor_plate",
+    public static final Supplier<Block> OAK_CARVED_PLATE = registerBlock("oak_carved_plate",
             () -> new ModPlateBlock(BlockBehaviour.Properties.of()
                     .mapColor(MapColor.WOOD)
                     .instrument(NoteBlockInstrument.BASS)
@@ -40,7 +45,7 @@ public class ModBlock {
                     .sound(SoundType.WOOD)
                     .ignitedByLava()
                     .noOcclusion()));
-    public static final Supplier<Block> HANGING_OAK_TRAPDOOR_PLATE = registerBlock("hanging_oak_trapdoor_plate",
+    public static final Supplier<Block> HANGING_OAK_CARVED_PLATE = registerBlock("hanging_oak_carved_plate",
             () -> new ModHangingPlateBlock(BlockBehaviour.Properties.of()
                     .mapColor(MapColor.WOOD)
                     .instrument(NoteBlockInstrument.BASS)
@@ -57,7 +62,7 @@ public class ModBlock {
                     .sound(SoundType.WOOD)
                     .ignitedByLava()
                     .noOcclusion()));
-    public static final Supplier<Block> SPRUCE_TRAPDOOR_PLATE = registerBlock("spruce_trapdoor_plate",
+    public static final Supplier<Block> SPRUCE_CARVED_PLATE = registerBlock("spruce_carved_plate",
             () -> new ModPlateBlock(BlockBehaviour.Properties.of()
                     .mapColor(MapColor.WOOD)
                     .instrument(NoteBlockInstrument.BASS)
@@ -73,7 +78,7 @@ public class ModBlock {
                     .sound(SoundType.WOOD)
                     .ignitedByLava()
                     .noOcclusion()));
-    public static final Supplier<Block> HANGING_SPRUCE_TRAPDOOR_PLATE = registerBlock("hanging_spruce_trapdoor_plate",
+    public static final Supplier<Block> HANGING_SPRUCE_CARVED_PLATE = registerBlock("hanging_spruce_carved_plate",
             () -> new ModHangingPlateBlock(BlockBehaviour.Properties.of()
                     .mapColor(MapColor.WOOD)
                     .instrument(NoteBlockInstrument.BASS)
@@ -90,7 +95,7 @@ public class ModBlock {
                     .sound(SoundType.WOOD)
                     .ignitedByLava()
                     .noOcclusion()));
-    public static final Supplier<Block> BIRCH_TRAPDOOR_PLATE = registerBlock("birch_trapdoor_plate",
+    public static final Supplier<Block> BIRCH_CARVED_PLATE = registerBlock("birch_carved_plate",
             () -> new ModPlateBlock(BlockBehaviour.Properties.of()
                     .mapColor(MapColor.WOOD)
                     .instrument(NoteBlockInstrument.BASS)
@@ -106,7 +111,7 @@ public class ModBlock {
                     .sound(SoundType.WOOD)
                     .ignitedByLava()
                     .noOcclusion()));
-    public static final Supplier<Block> HANGING_BIRCH_TRAPDOOR_PLATE = registerBlock("hanging_birch_trapdoor_plate",
+    public static final Supplier<Block> HANGING_BIRCH_CARVED_PLATE = registerBlock("hanging_birch_carved_plate",
             () -> new ModHangingPlateBlock(BlockBehaviour.Properties.of()
                     .mapColor(MapColor.WOOD)
                     .instrument(NoteBlockInstrument.BASS)
@@ -123,7 +128,7 @@ public class ModBlock {
                     .sound(SoundType.WOOD)
                     .ignitedByLava()
                     .noOcclusion()));
-    public static final Supplier<Block> JUNGLE_TRAPDOOR_PLATE = registerBlock("jungle_trapdoor_plate",
+    public static final Supplier<Block> JUNGLE_CARVED_PLATE = registerBlock("jungle_carved_plate",
             () -> new ModPlateBlock(BlockBehaviour.Properties.of()
                     .mapColor(MapColor.WOOD)
                     .instrument(NoteBlockInstrument.BASS)
@@ -139,7 +144,7 @@ public class ModBlock {
                     .sound(SoundType.WOOD)
                     .ignitedByLava()
                     .noOcclusion()));
-    public static final Supplier<Block> HANGING_JUNGLE_TRAPDOOR_PLATE = registerBlock("hanging_jungle_trapdoor_plate",
+    public static final Supplier<Block> HANGING_JUNGLE_CARVED_PLATE = registerBlock("hanging_jungle_carved_plate",
             () -> new ModHangingPlateBlock(BlockBehaviour.Properties.of()
                     .mapColor(MapColor.WOOD)
                     .instrument(NoteBlockInstrument.BASS)
@@ -156,7 +161,7 @@ public class ModBlock {
                     .sound(SoundType.WOOD)
                     .ignitedByLava()
                     .noOcclusion()));
-    public static final Supplier<Block> ACACIA_TRAPDOOR_PLATE = registerBlock("acacia_trapdoor_plate",
+    public static final Supplier<Block> ACACIA_CARVED_PLATE = registerBlock("acacia_carved_plate",
             () -> new ModPlateBlock(BlockBehaviour.Properties.of()
                     .mapColor(MapColor.WOOD)
                     .instrument(NoteBlockInstrument.BASS)
@@ -172,7 +177,7 @@ public class ModBlock {
                     .sound(SoundType.WOOD)
                     .ignitedByLava()
                     .noOcclusion()));
-    public static final Supplier<Block> HANGING_ACACIA_TRAPDOOR_PLATE = registerBlock("hanging_acacia_trapdoor_plate",
+    public static final Supplier<Block> HANGING_ACACIA_CARVED_PLATE = registerBlock("hanging_acacia_carved_plate",
             () -> new ModHangingPlateBlock(BlockBehaviour.Properties.of()
                     .mapColor(MapColor.WOOD)
                     .instrument(NoteBlockInstrument.BASS)
@@ -189,7 +194,7 @@ public class ModBlock {
                     .sound(SoundType.WOOD)
                     .ignitedByLava()
                     .noOcclusion()));
-    public static final Supplier<Block> DARK_OAK_TRAPDOOR_PLATE = registerBlock("dark_oak_trapdoor_plate",
+    public static final Supplier<Block> DARK_OAK_CARVED_PLATE = registerBlock("dark_oak_carved_plate",
             () -> new ModPlateBlock(BlockBehaviour.Properties.of()
                     .mapColor(MapColor.WOOD)
                     .instrument(NoteBlockInstrument.BASS)
@@ -205,7 +210,7 @@ public class ModBlock {
                     .sound(SoundType.WOOD)
                     .ignitedByLava()
                     .noOcclusion()));
-    public static final Supplier<Block> HANGING_DARK_OAK_TRAPDOOR_PLATE = registerBlock("hanging_dark_oak_trapdoor_plate",
+    public static final Supplier<Block> HANGING_DARK_OAK_CARVED_PLATE = registerBlock("hanging_dark_oak_carved_plate",
             () -> new ModHangingPlateBlock(BlockBehaviour.Properties.of()
                     .mapColor(MapColor.WOOD)
                     .instrument(NoteBlockInstrument.BASS)
@@ -222,7 +227,7 @@ public class ModBlock {
                     .sound(SoundType.WOOD)
                     .ignitedByLava()
                     .noOcclusion()));
-    public static final Supplier<Block> MANGROVE_TRAPDOOR_PLATE = registerBlock("mangrove_trapdoor_plate",
+    public static final Supplier<Block> MANGROVE_CARVED_PLATE = registerBlock("mangrove_carved_plate",
             () -> new ModPlateBlock(BlockBehaviour.Properties.of()
                     .mapColor(MapColor.WOOD)
                     .instrument(NoteBlockInstrument.BASS)
@@ -238,7 +243,7 @@ public class ModBlock {
                     .sound(SoundType.WOOD)
                     .ignitedByLava()
                     .noOcclusion()));
-    public static final Supplier<Block> HANGING_MANGROVE_TRAPDOOR_PLATE = registerBlock("hanging_mangrove_trapdoor_plate",
+    public static final Supplier<Block> HANGING_MANGROVE_CARVED_PLATE = registerBlock("hanging_mangrove_carved_plate",
             () -> new ModHangingPlateBlock(BlockBehaviour.Properties.of()
                     .mapColor(MapColor.WOOD)
                     .instrument(NoteBlockInstrument.BASS)
@@ -255,7 +260,7 @@ public class ModBlock {
                     .sound(SoundType.WOOD)
                     .ignitedByLava()
                     .noOcclusion()));
-    public static final Supplier<Block> CHERRY_TRAPDOOR_PLATE = registerBlock("cherry_trapdoor_plate",
+    public static final Supplier<Block> CHERRY_CARVED_PLATE = registerBlock("cherry_carved_plate",
             () -> new ModPlateBlock(BlockBehaviour.Properties.of()
                     .mapColor(MapColor.WOOD)
                     .instrument(NoteBlockInstrument.BASS)
@@ -271,7 +276,7 @@ public class ModBlock {
                     .sound(SoundType.WOOD)
                     .ignitedByLava()
                     .noOcclusion()));
-    public static final Supplier<Block> HANGING_CHERRY_TRAPDOOR_PLATE = registerBlock("hanging_cherry_trapdoor_plate",
+    public static final Supplier<Block> HANGING_CHERRY_CARVED_PLATE = registerBlock("hanging_cherry_carved_plate",
             () -> new ModHangingPlateBlock(BlockBehaviour.Properties.of()
                     .mapColor(MapColor.WOOD)
                     .instrument(NoteBlockInstrument.BASS)
@@ -288,7 +293,7 @@ public class ModBlock {
                     .sound(SoundType.WOOD)
                     .ignitedByLava()
                     .noOcclusion()));
-    public static final Supplier<Block> BAMBOO_TRAPDOOR_PLATE = registerBlock("bamboo_trapdoor_plate",
+    public static final Supplier<Block> BAMBOO_CARVED_PLATE = registerBlock("bamboo_carved_plate",
             () -> new ModPlateBlock(BlockBehaviour.Properties.of()
                     .mapColor(MapColor.WOOD)
                     .instrument(NoteBlockInstrument.BASS)
@@ -304,7 +309,7 @@ public class ModBlock {
                     .sound(SoundType.WOOD)
                     .ignitedByLava()
                     .noOcclusion()));
-    public static final Supplier<Block> HANGING_BAMBOO_TRAPDOOR_PLATE = registerBlock("hanging_bamboo_trapdoor_plate",
+    public static final Supplier<Block> HANGING_BAMBOO_CARVED_PLATE = registerBlock("hanging_bamboo_carved_plate",
             () -> new ModHangingPlateBlock(BlockBehaviour.Properties.of()
                     .mapColor(MapColor.WOOD)
                     .instrument(NoteBlockInstrument.BASS)
@@ -321,7 +326,7 @@ public class ModBlock {
                     .sound(SoundType.WOOD)
                     .ignitedByLava()
                     .noOcclusion()));
-    public static final Supplier<Block> CRIMSON_TRAPDOOR_PLATE = registerBlock("crimson_trapdoor_plate",
+    public static final Supplier<Block> CRIMSON_CARVED_PLATE = registerBlock("crimson_carved_plate",
             () -> new ModPlateBlock(BlockBehaviour.Properties.of()
                     .mapColor(MapColor.WOOD)
                     .instrument(NoteBlockInstrument.BASS)
@@ -337,7 +342,7 @@ public class ModBlock {
                     .sound(SoundType.WOOD)
                     .ignitedByLava()
                     .noOcclusion()));
-    public static final Supplier<Block> HANGING_CRIMSON_TRAPDOOR_PLATE = registerBlock("hanging_crimson_trapdoor_plate",
+    public static final Supplier<Block> HANGING_CRIMSON_CARVED_PLATE = registerBlock("hanging_crimson_carved_plate",
             () -> new ModHangingPlateBlock(BlockBehaviour.Properties.of()
                     .mapColor(MapColor.WOOD)
                     .instrument(NoteBlockInstrument.BASS)
@@ -354,7 +359,7 @@ public class ModBlock {
                     .sound(SoundType.WOOD)
                     .ignitedByLava()
                     .noOcclusion()));
-    public static final Supplier<Block> WARPED_TRAPDOOR_PLATE = registerBlock("warped_trapdoor_plate",
+    public static final Supplier<Block> WARPED_CARVED_PLATE = registerBlock("warped_carved_plate",
             () -> new ModPlateBlock(BlockBehaviour.Properties.of()
                     .mapColor(MapColor.WOOD)
                     .instrument(NoteBlockInstrument.BASS)
@@ -370,7 +375,7 @@ public class ModBlock {
                     .sound(SoundType.WOOD)
                     .ignitedByLava()
                     .noOcclusion()));
-    public static final Supplier<Block> HANGING_WARPED_TRAPDOOR_PLATE = registerBlock("hanging_warped_trapdoor_plate",
+    public static final Supplier<Block> HANGING_WARPED_CARVED_PLATE = registerBlock("hanging_warped_carved_plate",
             () -> new ModHangingPlateBlock(BlockBehaviour.Properties.of()
                     .mapColor(MapColor.WOOD)
                     .instrument(NoteBlockInstrument.BASS)
@@ -387,7 +392,60 @@ public class ModBlock {
                     .strength(5.0F, 6.0F)
                     .sound(SoundType.METAL)
                     .noOcclusion()));
+    public static final Supplier<Block> HANGING_IRON_CARVED_PLATE = registerBlock("hanging_iron_carved_plate",
+            () -> new ModHangingPlateBlock(BlockBehaviour.Properties.of()
+                    .mapColor(MapColor.METAL)
+                    .instrument(NoteBlockInstrument.IRON_XYLOPHONE)
+                    .requiresCorrectToolForDrops()
+                    .strength(5.0F, 6.0F)
+                    .sound(SoundType.METAL)
+                    .noOcclusion()));
 
+    public static final Supplier<Block> COPPER_CARVED_PLATE = registerBlock("copper_carved_plate",
+            () -> new ModPlateBlock(BlockBehaviour.Properties.of()
+                    .mapColor(MapColor.COLOR_ORANGE)
+                    .requiresCorrectToolForDrops()
+                    .strength(3.0F, 6.0F)
+                    .sound(SoundType.COPPER)
+                    .noOcclusion()));
+    public static final Supplier<Block> HANGING_COPPER_CARVED_PLATE = registerBlock("hanging_copper_carved_plate",
+            () -> new ModHangingPlateBlock(BlockBehaviour.Properties.of()
+                    .mapColor(MapColor.COLOR_ORANGE)
+                    .requiresCorrectToolForDrops()
+                    .strength(3.0F, 6.0F)
+                    .sound(SoundType.COPPER)
+                    .noOcclusion()));
+
+    public static final Supplier<Block> GLASS_PLATE = registerBlock("glass_plate",
+            () -> new ModPlateBlock(BlockBehaviour.Properties.of()
+                    .instrument(NoteBlockInstrument.HAT)
+                    .strength(0.3F)
+                    .sound(SoundType.GLASS)
+                    .noOcclusion()));
+    public static final Supplier<Block> HANGING_GLASS_PLATE = registerBlock("hanging_glass_plate",
+            () -> new ModHangingPlateBlock(BlockBehaviour.Properties.of()
+                    .instrument(NoteBlockInstrument.HAT)
+                    .strength(0.3F)
+                    .sound(SoundType.GLASS)
+                    .noOcclusion()));
+
+    public static final Supplier<Block> REDSTONE_PLATE = registerBlock("redstone_plate",
+            () -> new ModPoweredPlateBlock(BlockBehaviour.Properties.of()
+                    .mapColor(MapColor.FIRE)
+                    .requiresCorrectToolForDrops()
+                    .strength(5.0F, 6.0F)
+                    .sound(SoundType.METAL)));
+    public static final Supplier<Block> REDSTONE_LAMP_PLATE = registerBlock("redstone_lamp_plate",
+            () -> new ModLampPlateBlock(BlockBehaviour.Properties.of()
+                    .mapColor(MapColor.FIRE)
+                    .lightLevel(litBlockEmission(15))
+                    .strength(0.3F)
+                    .sound(SoundType.GLASS)));
+
+
+    private static ToIntFunction<BlockState> litBlockEmission(int pLightValue) {
+        return p_50763_ -> p_50763_.getValue(BlockStateProperties.LIT) ? pLightValue : 0;
+    }
 
     private static <T extends Block> Supplier<T> registerBlock(String name, Supplier<T> block) {
         Supplier<T> toReturn = BLOCKS.register(name, block);

@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "half=bottom,lit=false": {
+      "model": "plateplate:block/redstone_lamp_plate_bottom"
+    },
+    "half=top,lit=false": {
+      "model": "plateplate:block/redstone_lamp_plate_top"
+    },
+    "half=bottom,lit=true": {
+      "model": "plateplate:block/redstone_lamp_plate_bottom_on"
+    },
+    "half=top,lit=true": {
+      "model": "plateplate:block/redstone_lamp_plate_top_on"
+    }
+  }
+}
