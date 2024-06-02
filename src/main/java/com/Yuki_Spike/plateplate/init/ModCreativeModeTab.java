@@ -63,15 +63,27 @@ public class ModCreativeModeTab {
                 output.accept(ModBlock.HANGING_WARPED_PLATE.get());
                 output.accept(ModBlock.HANGING_WARPED_CARVED_PLATE.get());
 
+                output.accept(ModBlock.SMOOTH_STONE_PLATE.get());
+                output.accept(ModBlock.HANGING_SMOOTH_STONE_PLATE.get());
+
+                output.accept(ModBlock.IRON_PLATE.get());
                 output.accept(ModBlock.IRON_CARVED_PLATE.get());
+                output.accept(ModBlock.HANGING_IRON_PLATE.get());
                 output.accept(ModBlock.HANGING_IRON_CARVED_PLATE.get());
+                output.accept(ModBlock.COPPER_PLATE.get());
                 output.accept(ModBlock.COPPER_CARVED_PLATE.get());
+                output.accept(ModBlock.HANGING_COPPER_PLATE.get());
                 output.accept(ModBlock.HANGING_COPPER_CARVED_PLATE.get());
 
                 output.accept(ModBlock.GLASS_PLATE.get());
                 output.accept(ModBlock.HANGING_GLASS_PLATE.get());
+
+                output.accept(ModBlock.CRAFTING_PLATE.get());
+                output.accept(ModBlock.HANGING_CRAFTING_PLATE.get());
                 output.accept(ModBlock.REDSTONE_PLATE.get());
+                output.accept(ModBlock.HANGING_REDSTONE_PLATE.get());
                 output.accept(ModBlock.REDSTONE_LAMP_PLATE.get());
+                output.accept(ModBlock.HANGING_REDSTONE_LAMP_PLATE.get());
             }).build());
 
     public static void register(IEventBus eventBus) {

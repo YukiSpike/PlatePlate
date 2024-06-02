@@ -45,12 +45,26 @@
   "block.plateplate.warped_carved_plate": "Warped Carved Plate",
   "block.plateplate.hanging_warped_plate": "Hanging Warped Plate",
   "block.plateplate.hanging_warped_carved_plate": "Hanging Warped Carved Plate",
+
+  "block.plateplate.smooth_stone_plate": "Smooth Stone Plate",
+  "block.plateplate.hanging_smooth_stone_plate": "Hanging Smooth Stone Plate",
+
+  "block.plateplate.iron_plate": "Iron Plate",
   "block.plateplate.iron_carved_plate": "Iron Carved Plate",
+  "block.plateplate.hanging_iron_plate": "Hanging IronPlate",
   "block.plateplate.hanging_iron_carved_plate": "Hanging Iron Carved Plate",
+  "block.plateplate.copper_plate": "Copper Plate",
   "block.plateplate.copper_carved_plate": "Copper Carved Plate",
+  "block.plateplate.hanging_copper_plate": "Hanging Copper Plate",
   "block.plateplate.hanging_copper_carved_plate": "Hanging Copper Carved Plate",
+
   "block.plateplate.glass_plate": "Glass Plate",
   "block.plateplate.hanging_glass_plate": "Hanging Glass Plate",
+
+  "block.plateplate.crafting_plate": "Crafting Plate",
+  "block.plateplate.hanging_crafting_plate": "Hanging Crafting Plate",
   "block.plateplate.redstone_plate": "Redstone Plate",
-  "block.plateplate.redstone_lamp_plate": "Redstone Lamp Plate"
+  "block.plateplate.hanging_redstone_plate": "Redstone Plate",
+  "block.plateplate.redstone_lamp_plate": "Hanging Redstone Lamp Plate",
+  "block.plateplate.hanging_redstone_lamp_plate": "Hanging Redstone Lamp Plate"
 }

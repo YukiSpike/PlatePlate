@@ -45,12 +45,26 @@
   "block.plateplate.warped_carved_plate": "诡异木雕刻板",
   "block.plateplate.hanging_warped_plate": "竖直诡异木板",
   "block.plateplate.hanging_warped_carved_plate": "竖直诡异木雕刻板",
+
+  "block.plateplate.smooth_stone_plate": "平滑石头板",
+  "block.plateplate.hanging_smooth_stone_plate": "竖直平滑石头板",
+
+  "block.plateplate.iron_plate": "铁板",
   "block.plateplate.iron_carved_plate": "铁雕刻板",
+  "block.plateplate.hanging_iron_plate": "竖直铁板",
   "block.plateplate.hanging_iron_carved_plate": "竖直铁雕刻板",
+  "block.plateplate.copper_plate": "铜板",
   "block.plateplate.copper_carved_plate": "铜雕刻板",
+  "block.plateplate.hanging_copper_plate": "竖直铜板",
   "block.plateplate.hanging_copper_carved_plate": "竖直铜雕刻板",
+
   "block.plateplate.glass_plate": "玻璃板",
   "block.plateplate.hanging_glass_plate": "竖直玻璃板",
+
+  "block.plateplate.crafting_plate": "合成板",
+  "block.plateplate.hanging_crafting_plate": "竖直合成板",
   "block.plateplate.redstone_plate": "红石板",
-  "block.plateplate.redstone_lamp_plate": "红石灯板"
+  "block.plateplate.hanging_redstone_plate": "竖直红石板",
+  "block.plateplate.redstone_lamp_plate": "红石灯板",
+  "block.plateplate.hanging_redstone_lamp_plate": "竖直红石灯板"
 }

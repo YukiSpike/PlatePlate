@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "half=bottom": {
+      "model": "plateplate:block/smooth_stone_plate_bottom"
+    },
+    "half=top": {
+      "model": "plateplate:block/smooth_stone_plate_top"
+    }
+  }
+}

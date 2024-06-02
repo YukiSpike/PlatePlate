@@ -5,8 +5,6 @@ import com.Yuki_Spike.plateplate.block.*;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.Blocks;
-import net.minecraft.world.level.block.PoweredBlock;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.BlockState;
@@ -21,6 +19,7 @@ import java.util.function.ToIntFunction;
 public class ModBlock {
     public static final DeferredRegister.Blocks BLOCKS = DeferredRegister.createBlocks(PlatePlate.MODID);
 
+    //木板
     public static final Supplier<Block> OAK_PLATE = registerBlock("oak_plate",
             () -> new ModPlateBlock(BlockBehaviour.Properties.of()
                     .mapColor(MapColor.WOOD)
@@ -384,8 +383,41 @@ public class ModBlock {
                     .ignitedByLava()
                     .noOcclusion()));
 
+    //石板
+    public static final Supplier<Block> SMOOTH_STONE_PLATE = registerBlock("smooth_stone_plate",
+            () -> new ModPlateBlock(BlockBehaviour.Properties.of()
+                    .mapColor(MapColor.STONE)
+                    .instrument(NoteBlockInstrument.BASEDRUM)
+                    .requiresCorrectToolForDrops()
+                    .strength(2.0F, 6.0F)
+                    .noOcclusion()));
+    public static final Supplier<Block> HANGING_SMOOTH_STONE_PLATE = registerBlock("hanging_smooth_stone_plate",
+            () -> new ModHangingPlateBlock(BlockBehaviour.Properties.of()
+                    .mapColor(MapColor.STONE)
+                    .instrument(NoteBlockInstrument.BASEDRUM)
+                    .requiresCorrectToolForDrops()
+                    .strength(2.0F, 6.0F)
+                    .noOcclusion()));
+
+    //金属板
+    public static final Supplier<Block> IRON_PLATE = registerBlock("iron_plate",
+            () -> new ModPlateBlock(BlockBehaviour.Properties.of()
+                    .mapColor(MapColor.METAL)
+                    .instrument(NoteBlockInstrument.IRON_XYLOPHONE)
+                    .requiresCorrectToolForDrops()
+                    .strength(5.0F, 6.0F)
+                    .sound(SoundType.METAL)
+                    .noOcclusion()));
     public static final Supplier<Block> IRON_CARVED_PLATE = registerBlock("iron_carved_plate",
             () -> new ModPlateBlock(BlockBehaviour.Properties.of()
+                    .mapColor(MapColor.METAL)
+                    .instrument(NoteBlockInstrument.IRON_XYLOPHONE)
+                    .requiresCorrectToolForDrops()
+                    .strength(5.0F, 6.0F)
+                    .sound(SoundType.METAL)
+                    .noOcclusion()));
+    public static final Supplier<Block> HANGING_IRON_PLATE = registerBlock("hanging_iron_plate",
+            () -> new ModHangingPlateBlock(BlockBehaviour.Properties.of()
                     .mapColor(MapColor.METAL)
                     .instrument(NoteBlockInstrument.IRON_XYLOPHONE)
                     .requiresCorrectToolForDrops()
@@ -401,8 +433,22 @@ public class ModBlock {
                     .sound(SoundType.METAL)
                     .noOcclusion()));
 
+    public static final Supplier<Block> COPPER_PLATE = registerBlock("copper_plate",
+            () -> new ModPlateBlock(BlockBehaviour.Properties.of()
+                    .mapColor(MapColor.COLOR_ORANGE)
+                    .requiresCorrectToolForDrops()
+                    .strength(3.0F, 6.0F)
+                    .sound(SoundType.COPPER)
+                    .noOcclusion()));
     public static final Supplier<Block> COPPER_CARVED_PLATE = registerBlock("copper_carved_plate",
             () -> new ModPlateBlock(BlockBehaviour.Properties.of()
+                    .mapColor(MapColor.COLOR_ORANGE)
+                    .requiresCorrectToolForDrops()
+                    .strength(3.0F, 6.0F)
+                    .sound(SoundType.COPPER)
+                    .noOcclusion()));
+    public static final Supplier<Block> HANGING_COPPER_PLATE = registerBlock("hanging_copper_plate",
+            () -> new ModHangingPlateBlock(BlockBehaviour.Properties.of()
                     .mapColor(MapColor.COLOR_ORANGE)
                     .requiresCorrectToolForDrops()
                     .strength(3.0F, 6.0F)
@@ -416,6 +462,7 @@ public class ModBlock {
                     .sound(SoundType.COPPER)
                     .noOcclusion()));
 
+    //玻璃板
     public static final Supplier<Block> GLASS_PLATE = registerBlock("glass_plate",
             () -> new ModPlateBlock(BlockBehaviour.Properties.of()
                     .instrument(NoteBlockInstrument.HAT)
@@ -429,18 +476,51 @@ public class ModBlock {
                     .sound(SoundType.GLASS)
                     .noOcclusion()));
 
+    //特殊方块
+    public static final Supplier<Block> CRAFTING_PLATE = registerBlock("crafting_plate",
+            () -> new ModCraftingPlateBlock(BlockBehaviour.Properties.of()
+                    .mapColor(MapColor.WOOD)
+                    .instrument(NoteBlockInstrument.BASS)
+                    .strength(2.5F)
+                    .sound(SoundType.WOOD)
+                    .ignitedByLava()
+                    .noOcclusion()));
+    public static final Supplier<Block> HANGING_CRAFTING_PLATE = registerBlock("hanging_crafting_plate",
+            () -> new ModHangingCraftingPlateBlock(BlockBehaviour.Properties.of()
+                    .mapColor(MapColor.WOOD)
+                    .instrument(NoteBlockInstrument.BASS)
+                    .strength(2.5F)
+                    .sound(SoundType.WOOD)
+                    .ignitedByLava()
+                    .noOcclusion()));
     public static final Supplier<Block> REDSTONE_PLATE = registerBlock("redstone_plate",
             () -> new ModPoweredPlateBlock(BlockBehaviour.Properties.of()
                     .mapColor(MapColor.FIRE)
                     .requiresCorrectToolForDrops()
                     .strength(5.0F, 6.0F)
-                    .sound(SoundType.METAL)));
+                    .sound(SoundType.METAL)
+                    .noOcclusion()));
+    public static final Supplier<Block> HANGING_REDSTONE_PLATE = registerBlock("hanging_redstone_plate",
+            () -> new ModHangingPoweredPlateBlock(BlockBehaviour.Properties.of()
+                    .mapColor(MapColor.FIRE)
+                    .requiresCorrectToolForDrops()
+                    .strength(5.0F, 6.0F)
+                    .sound(SoundType.METAL)
+                    .noOcclusion()));
     public static final Supplier<Block> REDSTONE_LAMP_PLATE = registerBlock("redstone_lamp_plate",
             () -> new ModLampPlateBlock(BlockBehaviour.Properties.of()
                     .mapColor(MapColor.FIRE)
                     .lightLevel(litBlockEmission(15))
                     .strength(0.3F)
-                    .sound(SoundType.GLASS)));
+                    .sound(SoundType.GLASS)
+                    .noOcclusion()));
+    public static final Supplier<Block> HANGING_REDSTONE_LAMP_PLATE = registerBlock("hanging_redstone_lamp_plate",
+            () -> new ModHangingLampPlateBlock(BlockBehaviour.Properties.of()
+                    .mapColor(MapColor.FIRE)
+                    .lightLevel(litBlockEmission(15))
+                    .strength(0.3F)
+                    .sound(SoundType.GLASS)
+                    .noOcclusion()));
 
 
     private static ToIntFunction<BlockState> litBlockEmission(int pLightValue) {

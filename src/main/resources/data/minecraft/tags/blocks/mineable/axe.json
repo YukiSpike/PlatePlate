@@ -43,6 +43,8 @@
     "plateplate:warped_plate",
     "plateplate:warped_carved_plate",
     "plateplate:hanging_warped_plate",
-    "plateplate:hanging_warped_carved_plate"
+    "plateplate:hanging_warped_carved_plate",
+    "plateplate:crafting_plate",
+    "plateplate:hanging_crafting_plate"
   ]
 }

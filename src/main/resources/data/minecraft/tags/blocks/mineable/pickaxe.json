@@ -1,9 +1,18 @@
 {
   "values": [
+    "plateplate:smooth_stone_plate",
+    "plateplate:hanging_smooth_stone_plate",
+    "plateplate:iron_plate",
     "plateplate:iron_carved_plate",
+    "plateplate:copper_plate",
     "plateplate:copper_carved_plate",
+    "plateplate:hanging_iron_plate",
     "plateplate:hanging_iron_carved_plate",
+    "plateplate:hanging_copper_plate",
     "plateplate:hanging_copper_carved_plate",
-    "plateplate:redstone_plate"
+    "plateplate:redstone_plate",
+    "plateplate:hanging_redstone_plate",
+    "plateplate:redstone_lamp_plate",
+    "plateplate:hanging_redstone_lamp_plate"
   ]
 }
